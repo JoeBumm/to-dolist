@@ -27,11 +27,11 @@ def store_txt(txt,nav):
 #user prompt
 print("""Please Choose your service
       
-      # Press 1 for adding todolists, add each one per time
+      # Press 1: For adding tasks. (add each one per time)
 
-      # press 2 for viewing your todo list (New Feature !!)
+      # Press 2: For viewing your todo list. (New Feature !!)
 
-      # For deleting all your tasks, press 9 (NO UNDO)
+      # Press 9: For deleting all your tasks.  (NO UNDO)
       
       """)
 
