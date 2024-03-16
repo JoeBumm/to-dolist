@@ -20,6 +20,7 @@ while navigation!=-1 and navigation==1:
     task = input("What do you want to accomplish today? ")
     with open('task.txt' , 'w') as file:
         file.write(format_text(task))
+        file.write()
     navigation = int(input("Want to add another task? press 1 to continute , -1 to kill "))
 
 
