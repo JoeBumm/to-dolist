@@ -9,6 +9,12 @@ def task_handler(task):
     task_list = [task] + task_list
     return task_list 
 
+def store_txt(txt):
+    #this function has two modes, write and append
+    with open('task.txt' , 'a') as file:
+        file.write(format_text(task))
+        file.write('\n')
+
 #user prompt
 print("""Please Choose your service
       Press 1 for adding todolists, add each one per time
@@ -18,9 +24,7 @@ print("""Please Choose your service
 navigation = int(input("Enter the chosen service: "))
 while navigation!=-1 and navigation==1:
     task = input("What do you want to accomplish today? ")
-    with open('task.txt' , 'w') as file:
-        file.write(format_text(task))
-        file.write()
+    store_txt(task)
     navigation = int(input("Want to add another task? press 1 to continute , -1 to kill "))
 
 
