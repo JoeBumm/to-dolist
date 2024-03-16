@@ -31,17 +31,23 @@ print("""Please Choose your service
       press -1 for ending the process
       For deleting all your tasks, press 9 (no undo !!)""")
 
-# tha navigation toolbox for the user
-navigation = int(input("Enter the chosen service: "))
 
 
-while navigation!=-1 and navigation==1:
-    task = input("What do you want to accomplish today? ")
-    store_txt(task,1)
-    navigation = int(input("Want to add another task? press 1 to continute , -1 to kill "))
-if navigation==2:
-    print("Tasks today: ")
-    store_txt("",2)
-if navigation==9:
-    store_txt("",9)
-
+try:
+    # tha navigation toolbox for the user
+    navigation = int(input("Enter the chosen service: "))
+    while (navigation!=1 and navigation!=9 and navigation!=2):
+        navigation = int(input("Enter a suitable number please: "))
+    while navigation!=-1 and navigation==1:
+            task = input("What do you want to accomplish today? ")
+            store_txt(task,1)
+            navigation = int(input("Want to add another task? press 1 to continute , -1 to kill "))
+    if navigation==2:
+        print("Tasks today: ")
+        store_txt("",2)
+    if navigation==9:
+        store_txt("",9)
+except:
+    print("""
+Hey it looks like there's an error with your input
+please make sure you entered a suitable input, and reread the prompt.""")
