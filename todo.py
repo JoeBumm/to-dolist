@@ -27,9 +27,9 @@ def store_txt(txt,nav):
 #user prompt
 print("""Please Choose your service
       Press 1 for adding todolists, add each one per time
-      press 2 for viewing your todo list (coming soon)
+      press 2 for viewing your todo list (New Feature !!)
       press -1 for ending the process
-      For deleting all your tasks, press 9 (no undo !!)""")
+      For deleting all your tasks, press 9 (NO UNDO)""")
 
 
 
@@ -41,7 +41,7 @@ try:
     while navigation!=-1 and navigation==1:
             task = input("What do you want to accomplish today? ")
             store_txt(task,1)
-            navigation = int(input("Want to add another task? press 1 to continute , -1 to kill "))
+            navigation = int(input("Want to add another task? press 1 to continute , -1 to kill: "))
     if navigation==2:
         print("Tasks today: ")
         store_txt("",2)
