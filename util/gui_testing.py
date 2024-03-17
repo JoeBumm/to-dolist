@@ -25,17 +25,28 @@ btn1 = tk.Button(buttom_frame, text="1", font=('Arial', 18))
 # To stretch the whole buttoms accross the window
 btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
 
-btn1 = tk.Button(buttom_frame, text="1", font=('Arial', 18))
+btn2 = tk.Button(buttom_frame, text="2", font=('Arial', 18))
 # To stretch the whole buttoms accross the window
-btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
+btn2.grid(row=0, column=1, sticky=tk.W+tk.E)
 
-btn1 = tk.Button(buttom_frame, text="1", font=('Arial', 18))
+btn3 = tk.Button(buttom_frame, text="3", font=('Arial', 18))
 # To stretch the whole buttoms accross the window
-btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
+btn3.grid(row=0, column=2, sticky=tk.W+tk.E)
 
-btn1 = tk.Button(buttom_frame, text="1", font=('Arial', 18))
+btn4 = tk.Button(buttom_frame, text="4", font=('Arial', 18))
 # To stretch the whole buttoms accross the window
-btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
+btn4.grid(row=1, column=0, sticky=tk.W+tk.E)
+
+btn5 = tk.Button(buttom_frame, text="5", font=('Arial', 18))
+# To stretch the whole buttoms accross the window
+btn5.grid(row=1, column=1, sticky=tk.W+tk.E)
+
+btn6 = tk.Button(buttom_frame, text="6", font=('Arial', 18))
+# To stretch the whole buttoms accross the window
+btn6.grid(row=1, column=2, sticky=tk.W+tk.E)
+
+buttom_frame.pack(fill='x')
+
 ## This is an entry place
 # myentry = tk.Entry(root)
 # myentry.pack()
